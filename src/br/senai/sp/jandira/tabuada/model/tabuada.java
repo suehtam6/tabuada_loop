@@ -4,34 +4,43 @@ import java.util.Scanner;
 
 public class tabuada {
 
-    double multiplicando;
-    double multiplicadorInicial;
-    double multiplicadorFinal;
+
+    int multiplicadorInicial;
+    int multiplicando;
+    int multiplicadorFinal;
+    int situacao;
+    int [] calcularFinal = new int [multiplicadorFinal];
 
 
-      public void exibirDados() {
+
+      public void obterDados() {
 
           Scanner leitor = new Scanner(System.in);
 
           System.out.println("======================");
           System.out.println("Qual o número que vai ser multiplicado?");
-          multiplicando = leitor.nextDouble();
+          multiplicando = leitor.nextInt();
 
           System.out.println("Qual vai ser o miltiplicador inicial?");
-          multiplicadorInicial = leitor.nextDouble();
+          multiplicadorInicial = leitor.nextInt();
 
           System.out.println("Qual vai ser o miltiplicador final?");
-          multiplicadorFinal = leitor.nextDouble();
+          multiplicadorFinal = leitor.nextInt();
+
+
+        trocarDados();
 
 
       }
 
+      public void trocarDados() {
 
 
 
+          System.out.println(multiplicadorInicial);
+          System.out.println(multiplicadorFinal);
 
-    }
-
+      }
 
 
 

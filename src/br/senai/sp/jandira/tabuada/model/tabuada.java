@@ -51,7 +51,7 @@ public class tabuada {
 
         }
 
-            exibirTabuada();
+        exibirTabuada();
     }
 
         public void exibirTabuada() {

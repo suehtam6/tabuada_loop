@@ -29,7 +29,7 @@ public class tabuada {
         calcularTabuada();
     }
 
-    public void calcularTabuada() {
+    public String[] calcularTabuada() {
 
         int apoio = 0;
         if (multiplicadorFinal < multiplicadorInicial) {
@@ -51,23 +51,18 @@ public class tabuada {
 
         }
 
-        exibirTabuada();
+        return tabuada;
+
+        // exibirTabuada();
     }
 
         public void exibirTabuada() {
-            System.out.println("===========================");
-            System.out.println("RESULTADO DA TABUADA");
-            System.out.println("===========================");
 
             int i = 0;
             while (i < tabuada.length) {
                 System.out.println(tabuada[i]);
                 i++; // i = i + 1
             }
-
-            System.out.println("===========================");
-            System.out.println("FIM DA TABUADA");
-            System.out.println("===========================");
 
         }
 
